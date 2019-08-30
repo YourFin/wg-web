@@ -1,2 +1,4 @@
 # wg-web
-Web interface to futzing with vpns
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
