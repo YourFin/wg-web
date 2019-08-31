@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  public_key: MyString
+  is_connected: false
+  endpoint_id: 1
+
+two:
+  name: MyString
+  public_key: MyString
+  is_connected: false
+  endpoint_id: 1

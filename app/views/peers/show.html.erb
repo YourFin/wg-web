@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @peer.name %>
+</p>
+
+<p>
+  <strong>Public key:</strong>
+  <%= @peer.public_key %>
+</p>
+
+<p>
+  <strong>Is connected:</strong>
+  <%= @peer.is_connected %>
+</p>
+
+<p>
+  <strong>Endpoint:</strong>
+  <%= @peer.endpoint_id %>
+</p>
+
+<%= link_to 'Edit', edit_peer_path(@peer) %> |
+<%= link_to 'Back', peers_path %>

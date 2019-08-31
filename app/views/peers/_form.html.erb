@@ -1,0 +1,37 @@
+<%= form_with(model: peer, local: true) do |form| %>
+  <% if peer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(peer.errors.count, "error") %> prohibited this peer from being saved:</h2>
+
+      <ul>
+      <% peer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :public_key %>
+    <%= form.text_field :public_key %>
+  </div>
+
+  <div class="field">
+    <%= form.label :is_connected %>
+    <%= form.check_box :is_connected %>
+  </div>
+
+  <div class="field">
+    <%= form.label :endpoint_id %>
+    <%= form.number_field :endpoint_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
